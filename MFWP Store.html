@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFWP Store</title>
+    <link rel="stylesheet" href="MFWP Store.css">
+    <style>
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <script src="jquery.imagesloaded.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.outer-menu').hover(function () {
+                $(this).find('.inner-menu').css('display', 'block');
+            }, function () {
+                $(this).find('.inner-menu').css('display', 'none');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#main-section').imagesLoaded(function () {
+                $('#main-section').masonry({
+                    itemSelector: '.paper',
+                    columnWidth: 230,
+                    isAnimated: true
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-search-form">
+            <form>
+                <input onkeyup="filter()" type="search" class="input-search" />
+                <input type="submit" class="input-search-submit" value="검색" />
+            </form>
+        </div>
+        <h1 class="header-title"></h1>
+        <div class="header-menu">
+            <ul class="outer-menu">
+                <li>
+                    <a href="#">사용자</a>
+                    <ul class="inner-menu">
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">주문배송</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">문의내역</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="main-navigation">
+        <ul>
+            <li><a href="#">전체</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">찜한 목록</a></li>
+            <li><a href="#">인기 상품</a></li>
+            <li><a href="#">사은품</a></li>
+        </ul>
+    </nav>
+    <section id="main-section">
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5538849&t=board"><img
+                        src="Persian.PNG" width="190" height="240"></a>
+            </div>
+            <p class="paper-description"><b>Persian</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5791538&t=board"><img
+                        src="Ragdoll.png" width="190" height="210"></a>
+            </div>
+            <p class="paper-description"><b>Ragdoll</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/DOG/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=11274351&t=board"><img
+                        src="Pomeranian.PNG" width="190" height="200"></a>
+            </div>
+            <p class="paper-description"><b>Pomeranian</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/mdog/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5597698&t=board"><img
+                        src="Welshcorgi.png" width="190" height="215"></a>
+            </div>
+            <p class="paper-description"><b>Welshcorgi</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/bigDOG/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=1659409&t=board"><img
+                        src="Samoyed.png" width="190" height="256" /></a>
+            </div>
+            <p class="paper-description"><b>Samoyed</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5537104&t=board"><img
+                        src="Munchkin.png" width="190" height="182" /></a>
+            </div>
+            <p class="paper-description"><b>Munchkin</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/bigDOG/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=2586381&t=board"><img
+                        src="Labrador Retriever.png" width="190" height="176" /></a>
+            </div>
+            <p class="paper-description"><b>Labrador Retriever</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/bigDOG/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=2587973&t=board"><img
+                        src="Siberian Husky.png" width="190" height="316" /></a>
+            </div>
+            <p class="paper-description"><b>Siberian Husky</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/mdog/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=1816543&t=board"><img
+                        src="Japanese Spitz.png" width="190" height="186" /></a>
+            </div>
+            <p class="paper-description"><b>Japanese Spitz</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/mdog/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=3050983&t=board"><img
+                        src="Shibainu.png" width="190" height="249" /></a>
+            </div>
+            <p class="paper-description"><b>Shibainu</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/mdog/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=1943511&t=board"><img
+                        src="Frenchbulldog.png" width="190" height="324" /></a>
+            </div>
+            <p class="paper-description"><b>Frenchbulldog</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5387112&t=board"><img
+                        src="Highland Fold.png" width="190" height="305" /></a>
+            </div>
+            <p class="paper-description"><b>Highland Fold</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=4550658&t=board"><img
+                        src="Bengal.png" width="190" height="180" /></a>
+            </div>
+            <p class="paper-description"><b>Bengal</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5033587&t=board"><img
+                        src="Siamese cat.png" width="190" height="273" /></a>
+            </div>
+            <p class="paper-description"><b>Siamese cat</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=2607330&t=board"><img
+                        src="American Shorthair.png" width="190" height="188" /></a>
+            </div>
+            <p class="paper-description"><b>American Shorthair</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5441867&t=board"><img
+                        src="Russianblue.png" width="190" height="230" /></a>
+            </div>
+            <p class="paper-description"><b>Russianblue</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mjt9&bmode=view&idx=2570586&t=board"><img
+                        src="Norwegian Forest Cat.png" width="190" height="192" /></a>
+            </div>
+            <p class="paper-description"><b>Norwegian Forest Cat</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/cat/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Njt9&bmode=view&idx=1535198&t=board"><img
+                        src="Turkish Angora.png" width="190" height="317" /></a>
+            </div>
+            <p class="paper-description"><b>Turkish Angora</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/sdog/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=5393638&t=board"><img
+                        src="Bichon Frise.png" width="190" height="326" /></a>
+            </div>
+            <p class="paper-description"><b>Bichon Frise</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+        <div class="paper">
+            <div class="paper-holder">
+                <a
+                    href="https://dogmaru.co.kr/sdog/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6Mzt9&bmode=view&idx=1735394&t=board"><img
+                        src="Poodle.png" width="190" height="258" /></a>
+            </div>
+            <p class="paper-description"><b>Poodle</b></p>
+            <div class="paper-content">
+                <p class="paper-text">₩분양가: 문의</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
